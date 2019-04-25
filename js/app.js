@@ -144,7 +144,7 @@ function eventListeners() {
 
             if (budget.budgetLeft >= amount) {
                 html.addExpenseToList(expenseName, amount);
-                html.trackBudget(amount);
+                let budgertTracker = html.trackBudget(amount);
                 html.printMessage('Added...', 'alert-success');
                 // Check when 25% is left
                 if ((budget.budget / 4) > budgertTracker) {
